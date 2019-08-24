@@ -3,7 +3,7 @@ require_relative '../../lib/item'
 
 describe BuyThisGetThatPercentDiscount do
   subject(:buy_this_get_that_percent_discount) do
-    BuyThisGetThatPercentDiscount.new(discount_type: 'CHMK', this_code: 'CH1',
+    BuyThisGetThatPercentDiscount.new(discount_type: 'CHMK', priority: 4, this_code: 'CH1',
                                       that_code: 'MK1', percent_discount: 100, limit: 1)
   end
 
@@ -56,7 +56,7 @@ describe BuyThisGetThatPercentDiscount do
   describe '#apply_discount (private method)' do
     context 'when min this items and max that items are met and unlimited' do
       subject(:buy_this_get_that_percent_discount) do
-        BuyThisGetThatPercentDiscount.new(discount_type: 'APOM', this_code: 'OM1',
+        BuyThisGetThatPercentDiscount.new(discount_type: 'APOM', priority: 4, this_code: 'OM1',
                                           that_code: 'AP1', percent_discount: 50)
       end
 
@@ -187,7 +187,7 @@ describe BuyThisGetThatPercentDiscount do
 
     context 'when that item is 50% off unlimited offer' do
       subject(:buy_this_get_that_percent_discount) do
-        BuyThisGetThatPercentDiscount.new(discount_type: 'APOM', this_code: 'OM1',
+        BuyThisGetThatPercentDiscount.new(discount_type: 'APOM', priority: 4, this_code: 'OM1',
                                           that_code: 'AP1', percent_discount: 50)
       end
 

@@ -28,7 +28,7 @@ class Checkout
 
   def total
     @items.each(&:reset)
-    @sales_rules.each { |rule| rule.apply(@items) }
+    @sales_rules.sort_by(&:priority).each { |rule| rule.apply(@items) }
     @basket.total = @items.inject(0.0) { |total, item| total + item.price }.round(2)
   end
 

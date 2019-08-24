@@ -16,15 +16,15 @@ def newline
 end
 
 sales_rules = [
-  TwoForOneDiscount.new(discount_type: 'BOGO', code: 'CF1',
+  TwoForOneDiscount.new(discount_type: 'BOGO', code: 'CF1', priority: 3,
                         description: 'Buy-One-Get-One-Free Special on Coffee. (Unlimited)'),
-  ItemDiscount.new(discount_type: 'APPL', code: 'AP1', min_items: 3, discount: 4.50,
+  ItemDiscount.new(discount_type: 'APPL', code: 'AP1', min_items: 3, discount: 4.50, priority: 2,
                    description: 'If you buy 3 or more bags of Apples, the price drops to $4.50'),
-  BuyThisGetThatPercentDiscount.new(discount_type: 'CHMK', this_code: 'CH1', this_min_items: 1,
-                                    that_code: 'MK1', that_max_items: 1, percent_discount: 100, limit: 1,
+  BuyThisGetThatPercentDiscount.new(discount_type: 'CHMK', this_code: 'CH1', this_min_items: 1, that_code: 'MK1',
+                                    that_max_items: 1, percent_discount: 100, limit: 1, priority: 4,
                                     description: 'Purchase a box of Chai and get milk free. (Limit 1)'),
   BuyThisGetThatPercentDiscount.new(discount_type: 'APOM', this_code: 'OM1', this_min_items: 1,
-                                    that_code: 'AP1', that_max_items: 1, percent_discount: 50,
+                                    that_code: 'AP1', that_max_items: 1, percent_discount: 50, priority: 1,
                                     description: 'Purchase a bag of Oatmeal and get 50% off a bag of Apples')
 ]
 products = [

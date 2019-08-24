@@ -1,7 +1,8 @@
 class BaseDiscount
-  attr_reader :discount_type
+  attr_reader :priority
 
   @discount_type = ''
+  @priority = 0
   @decription = ''
   @min_items = 1
   @limit = nil

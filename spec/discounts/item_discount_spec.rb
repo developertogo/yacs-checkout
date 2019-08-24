@@ -2,7 +2,7 @@ require_relative '../../lib/discounts/item_discount'
 require_relative '../../lib/item'
 
 describe ItemDiscount do
-  subject(:item_discount) { ItemDiscount.new(discount_type: 'APPL', code: 'AP1', min_items: 3, discount: 4.50) }
+  subject(:item_discount) { ItemDiscount.new(discount_type: 'APPL', priority: 2, code: 'AP1', min_items: 3, discount: 4.50) }
 
   describe '#apply_discount? (private)' do
     context 'when min items is met' do

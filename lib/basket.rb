@@ -34,7 +34,7 @@ class Basket
       end
     end
     puts '------------------------------------------'
-    output_total = ('$' + total.round(2).to_s).rjust(8)
-    puts "    \t\t    \t\t  #{output_total}"
+    output_format = format('$%.2f', total).rjust(8)
+    puts "    \t\t    \t\t  #{output_format}"
   end
 end

@@ -1,9 +1,10 @@
 require_relative '../discounts/base_discount'
 
 class BuyThisGetThatPercentDiscount < BaseDiscount
-  def initialize(discount_type:, description: '', this_code:, this_min_items: 1, that_code:, that_max_items: 1, percent_discount:, limit: nil)
+  def initialize(discount_type:, description: '', priority:, this_code:, this_min_items: 1, that_code:, that_max_items: 1, percent_discount:, limit: nil)
     @discount_type = discount_type
     @description = description
+    @priority = priority
     @this_code = this_code
     @this_min_items = this_min_items
     @that_code = that_code

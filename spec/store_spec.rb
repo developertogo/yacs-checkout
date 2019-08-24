@@ -6,15 +6,16 @@ require_relative '../lib/discounts/buy_this_get_that_percent_discount.rb'
 describe Store do
   subject(:store) do
     sales_rules = [
-      TwoForOneDiscount.new(discount_type: 'BOGO', code: 'CF1'),
-      ItemDiscount.new(discount_type: 'APPL', code: 'AP1', min_items: 3, discount: 4.50),
-      BuyThisGetThatPercentDiscount.new(discount_type: 'CHMK',
+      TwoForOneDiscount.new(discount_type: 'BOGO', priority: 3, code: 'CF1'),
+      ItemDiscount.new(discount_type: 'APPL', priority: 2, code: 'AP1', min_items: 3, discount: 4.50),
+      BuyThisGetThatPercentDiscount.new(discount_type: 'CHMK', priority: 4,
                                         this_code: 'CH1', this_min_items: 1,
                                         that_code: 'MK1', that_max_items: 1,
                                         percent_discount: 100, limit: 1),
-      BuyThisGetThatPercentDiscount.new(discount_type: 'APOM', this_code: 'OM1',
-                                        this_min_items: 1, that_code: 'AP1',
-                                        that_max_items: 1, percent_discount: 50)
+      BuyThisGetThatPercentDiscount.new(discount_type: 'APOM', priority: 1,
+                                        this_code: 'OM1', this_min_items: 1,
+                                        that_code: 'AP1', that_max_items: 1,
+                                        percent_discount: 50)
     ]
     products = [
       Product.new('CH1', 'Chai', 3.11),

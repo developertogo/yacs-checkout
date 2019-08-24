@@ -2,7 +2,7 @@ require_relative '../../lib/discounts/two_for_one_discount'
 require_relative '../../lib/item'
 
 describe TwoForOneDiscount do
-  subject(:two_for_one_discount) { TwoForOneDiscount.new(discount_type: 'BOGO', code: 'CF1') }
+  subject(:two_for_one_discount) { TwoForOneDiscount.new(discount_type: 'BOGO', priority: 3, code: 'CF1') }
 
   describe '#apply_discount? (private)' do
     context 'when min items is met' do
@@ -65,7 +65,7 @@ describe TwoForOneDiscount do
 
     context 'when min items is met and limit one offer' do
       let(:limit) { 1 }
-      subject(:two_for_one_discount) { TwoForOneDiscount.new(discount_type: 'BOGO', code: 'CF1', limit: limit) }
+      subject(:two_for_one_discount) { TwoForOneDiscount.new(discount_type: 'BOGO', priority: 3, code: 'CF1', limit: limit) }
 
       it 'returns just the 1st order with 2nd item free' do
         orders = two_for_one_discount.send(:apply_discount, @orders)

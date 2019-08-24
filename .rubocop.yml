@@ -1,0 +1,32 @@
+
+# Ignore documentation being at line one of every file
+Style/DocumentationMethod:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/Next:
+  Enabled: false 
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+# Ignore the line length limit
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false

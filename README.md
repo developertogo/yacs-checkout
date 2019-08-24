@@ -8,7 +8,7 @@ The below Class Diagrams describes all the implemented classes and their relatio
 
 # Installation Instructions
 
-Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/), and `bundler` if you don't have it already, as follows: `gem install bundle`
+Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/), and `bundler` if you don't have it already, as follows: `gem install bundle`. This code base is using Ruby v2.4.5
 
 ```
 git clone git://github.com/developertogo/yacs-checkout.git

@@ -5,6 +5,8 @@
 
 The below Class Diagrams describes all the implemented classes and their relationships.
 
+![YACS Class Diagram](https://drive.google.com/file/d/1IDOk_HQWYN2CG9TrqigpS8qTqPoUP5Cg/view?usp=sharing)
+
 
 # Installation Instructions
 

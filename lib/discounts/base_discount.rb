@@ -2,6 +2,7 @@ class BaseDiscount
   attr_reader :priority
 
   @discount_type = ''
+  # apply discount with the highest priority first
   @priority = 0
   @decription = ''
   @min_items = 1

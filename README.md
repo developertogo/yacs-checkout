@@ -7,7 +7,8 @@ The below Class Diagrams describes all the implemented classes and their relatio
 ![YACS Class Diagram](https://github.com/developertogo/yacs-checkout/blob/master/docs/YACS-Checkout-System.vpd.png)
 
 There are 2 ways to try out the code sample with Docker or without Docker.
-**Note**: This code was tested with Ruby 2.4.5 and 2.6.5
+
+**Note**: This code was tested with Ruby _2.4.5_ and _2.6.5_
 
 # 1. Run code sample with Docker
 

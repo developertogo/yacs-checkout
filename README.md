@@ -1,5 +1,7 @@
 ## Yet Another Checkout System (YACS) based of Ruby
 
+This Ruby code simmulates a checkout register at a grocery store.
+
 # Class Diagram
 
 The below Class Diagrams describes all the implemented classes and their relationships.

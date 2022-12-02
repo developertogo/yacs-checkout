@@ -1,4 +1,4 @@
-# Yet Another Checkout System (YACS) based of Ruby
+# Yet Another Checkout System (YACS) based on Ruby
 
 This Ruby code simmulates a checkout register at a grocery store.
 

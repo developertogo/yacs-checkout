@@ -102,7 +102,7 @@ We’re looking for the following things when reviewing your code:
 ---
 ---
 
-## Solution in Ruby
+# Solution in Ruby
 
 ### Class Diagram
 

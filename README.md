@@ -2,6 +2,10 @@
 
 This Ruby code simmulates a checkout register at a grocery store.
 
+## Objective
+
+The objective of this project is to showcase my design and implementation of production quality code as a member of your development team.
+
 ## Task Assignment
 
 The Farmer’s Market

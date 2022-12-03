@@ -1,5 +1,5 @@
 class BaseDiscount
-  attr_reader :priority
+  attr_reader :discount_type, :priority
 
   @discount_type = ''
   # apply discount with the highest priority first
